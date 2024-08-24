@@ -12,4 +12,4 @@ tershell npm run dev
 
 Tershell will look for an available port and print a link to view the outputs.
 
-![alt text](https://github.com/[username]/tershell/blob/main/image.jpeg?raw=true)
+![alt text](https://github.com/wesselvdp/tershell/blob/main/image.jpeg?raw=true)
