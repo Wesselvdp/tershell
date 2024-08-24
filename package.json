@@ -1,0 +1,30 @@
+{
+  "name": "tershell",
+  "version": "1.0.0",
+  "description": "Tershell allows you to view outputs of a process on a web url on the same network. Use your mobile device to keep a watch on the logs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-website": "esbuild --minify  --outfile=./public/index.js ./src/index.ts",
+    "build": "esbuild --banner:js='#!/usr/bin/env node\n' --bundle --platform=node --outfile=./bin/tershell.js ./src/app.ts",
+    "tershell": "node dist/index.js",
+    "dev": "node test.js"
+  },
+  "bin": {
+    "tershell": "./bin/tershell.js"
+  },
+  "keywords": [],
+  "author": "wesselvdp",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "esbuild": "^0.23.0",
+    "@types/express": "^4.17.21",
+    "@types/ws": "^8.5.12"
+  }
+}
