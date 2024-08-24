@@ -4,7 +4,7 @@ Tershell was born out of a pain not having a second monitor. I wanted a way to d
 
 ## How to use
 
-Just prepend any proces with `tershell` and it will work:
+Just prepend any proces with `tershell`
 
 ```bash
 tershell npm run dev
